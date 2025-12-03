@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+  <link rel="profile" href="https://i.ibb.co/DPLLNsYL/Logo-CUF-Smart-City-1-1.jpg" />
+
+  <title>Contact Us - Call Us First</title>
+
+  <!-- Favicon / Icons -->
+  <link rel="icon" type="image/png" href="https://i.ibb.co/DPLLNsYL/Logo-CUF-Smart-City-1-1.jpg" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://i.ibb.co/DPLLNsYL/Logo-CUF-Smart-City-1-1.jpg" />
+  <link rel="shortcut icon" href="https://i.ibb.co/DPLLNsYL/Logo-CUF-Smart-City-1-1.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/DPLLNsYL/Logo-CUF-Smart-City-1-1.jpg" />
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+  <style>
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+      contain-intrinsic-size: 3000px 1500px;
+    }
+  </style>
+
+  <!-- Basic SEO (you can replace with Yoast/WP output if in WordPress) -->
+  <meta
+    name="description"
+    content="Call Us First provides AV integration, software implementation, enterprise technology, and IT staff augmentation to power smart city solutions."
+  />
+  <link rel="canonical" href="https://callusfirst.example.com/" />
+
+  <!-- Typography & Theme CSS -->
+  <link
+    rel="dns-prefetch"
+    href="//fonts.googleapis.com"
+  />
+  <link
+    rel="stylesheet"
+    id="google-fonts-css"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    media="all"
+  />
+  <link
+    rel="stylesheet"
+    id="bones-stylesheet-css"
+    href="https://avispl.com/wp-content/themes/avi-spl/library/css/style.css?50"
+    media="all"
+  />
+
+  <!-- Core layout utility classes from WP (optional but harmless) -->
+  <style>
+    :root {
+      --cuf-blue: #0a1d5f;
+      --cuf-accent: #4a90e2;
+      --cuf-white: #ffffff;
+      --cuf-dark: #141414;
+    }
+
+    body {
+      font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    /* Basic responsive visibility helpers */
+    @media (min-width: 992px) {
+      .block-visibility-hide-large-screen {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .block-visibility-hide-medium-screen {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .block-visibility-hide-small-screen {
+        display: none !important;
+      }
+    }
+
+    /* Skip link */
+    .skip-link__btn {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link__btn:focus {
+      position: static;
+      width: auto;
+      height: auto;
+    }
+
+    /* HEADER -------------------------------------------------- */
+
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: transparent !important;
+      border-bottom: none !important;
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-top: 20px;
+    }
+
+    .header__nav-toggle {
+      display: none;
+    }
+
+    .header__logo {
+      text-decoration: none;
+    }
+
+    .header__logo-title {
+      color: var(--cuf-white);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      display: block;
+    }
+
+    .header__logo-subtitle {
+      color: var(--cuf-white);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      display: block;
+      margin-top: -2px;
+    }
+
+    /* Remove theme star/diamond around logo */
+    .header__logo::before,
+    .header__logo::after,
+    .header__logo *::before,
+    .header__logo *::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    /* Navigation */
+    .header__navigation {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background: transparent !important;
+    }
+
+    .header__nav-simple {
+      display: flex;
+      gap: 35px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .header__nav-simple li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header__nav-simple a {
+      color: var(--cuf-white);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .header__nav-simple a:hover {
+      color: #979797;
+    }
+
+    .header__mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--cuf-white);
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* Help Desk button (header) */
+    .header__contact.ui-btn {
+      background: transparent !important;
+      border: 2px solid var(--cuf-white) !important;
+      padding: 10px 20px !important;
+      border-radius: 5px !important;
+      pointer-events: auto !important;
+      cursor: pointer !important;
+      text-decoration: none;
+    }
+
+    .header__contact span {
+      color: var(--cuf-white) !important;
+      font-weight: 700 !important;
+    }
+
+    .header__contact::before,
+    .header__contact::after,
+    .header__contact *::before,
+    .header__contact *::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    /* Hide unused built-in toggles / sidebar */
+    .header__search-toggle,
+    .header__sites-toggle,
+    #sidebar,
+    .header__sidebar {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+
+    /* Responsive nav */
+    @media (max-width: 992px) {
+      .header .container {
+        flex-wrap: wrap;
+      }
+
+      .header__navigation {
+        position: relative;
+        flex: 1 0 100%;
+        justify-content: flex-end;
+      }
+
+      .header__nav-simple {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        background: rgba(10, 29, 95, 0.98);
+      }
+
+      .header__nav-simple.active {
+        display: flex;
+      }
+
+      .header__mobile-toggle {
+        display: block;
+      }
+    }
+
+    /* LOCATION SELECTOR --------------------------------------- */
+
+    .location-selector {
+      display: none; /* Hidden for CUF site; keep markup for compatibility */
+    }
+
+    /* HERO ---------------------------------------------------- */
+
+    .hero.hero--home {
+      position: relative;
+      min-height: 100vh;
+      color: var(--cuf-white);
+      display: flex;
+      align-items: stretch;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .hero__bg iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120%;
+      height: 120%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      border: 0;
+    }
+
+    .hero__bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 220px 0 120px;
+    }
+
+    .hero__content h1 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .hero__content .p {
+      font-size: 1.1rem;
+      max-width: 480px;
+    }
+
+    .hero__content__btns {
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero__scroll {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero__content {
+        padding-top: 160px;
+      }
+
+      .hero__content h1 {
+        font-size: 2.3rem;
+      }
+    }
+
+    /* ABOUT INTRO -------------------------------------------- */
+
+    .about-intro {
+      padding: 80px 0;
+    }
+
+    .about-intro .sub {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .about-intro h2 {
+      max-width: 640px;
+      margin-bottom: 32px;
+    }
+
+    .about-intro__image {
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    /* CUSTOMER JOURNEY CAROUSEL ------------------------------ */
+
+    .customer-journey-carousel {
+      background: var(--cuf-dark);
+      color: var(--cuf-white);
+      padding: 80px 0;
+    }
+
+    .customer-journey-carousel__slider .swiper-slide__bg {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .customer-journey-carousel__slider .swiper-slide__bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .customer-journey-carousel__slider .swiper-slide__bg img,
+    .customer-journey-carousel__slider .swiper-slide__bg picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .customer-journey-carousel__slider .swiper-slide__body {
+      position: relative;
+      z-index: 2;
+    }
+
+    .customer-journey-carousel .page-block__header p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* LOGO MARQUEE ------------------------------------------- */
+
+    .logo-marquee {
+      padding: 80px 0;
+      background: #ffffff;
+    }
+
+    .logo-marquee__marquee {
+      display: flex;
+      gap: 40px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .logo-marquee__marquee__group {
+      display: flex;
+      gap: 40px;
+      animation: scroll-x 27s linear infinite;
+      min-width: max-content;
+    }
+
+    .logo-marquee__marquee img {
+      max-height: 60px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(0.1);
+    }
+
+    @keyframes scroll-x {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* INDUSTRIES SLIDER -------------------------------------- */
+
+    .page-slider.page-slider--blue {
+      padding: 80px 0;
+      background: var(--cuf-blue);
+      color: var(--cuf-white);
+    }
+
+    .page-slider .swiper-slide__img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .page-slider .swiper-slide__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .page-slider .swiper-slide__img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .page-slider .swiper-slide__body {
+      margin-top: 16px;
+    }
+
+    /* SPLIT SECTION (LOGO + TEXT) --------------------------- */
+
+    .cuf-split-band {
+      display: flex;
+      min-height: 600px;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cuf-split-band__image {
+      flex: 1;
+      background-color: #ffffff;
+      position: relative;
+    }
+
+    .cuf-split-band__image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .cuf-split-band__content {
+      flex: 1;
+      background-color: var(--cuf-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 60px;
+      color: var(--cuf-white);
+    }
+
+    .cuf-split-band__content-inner {
+      max-width: 600px;
+    }
+
+    .cuf-split-band__eyebrow {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cuf-split-band__title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 25px;
+    }
+
+    .cuf-split-band__text {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .cuf-split-band {
+        flex-direction: column;
+      }
+
+      .cuf-split-band__image {
+        min-height: 260px;
+      }
+    }
+
+    /* FOOTER ------------------------------------------------- */
+
+    footer.footer {
+      background: var(--cuf-blue) !important;
+      color: var(--cuf-white);
+      padding-top: 60px;
+    }
+
+    .footer__main {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .footer__main__logo svg {
+      display: none !important;
+    }
+
+    .footer__main__logo-wordmark {
+      text-decoration: none;
+    }
+
+    .footer__main__logo-title {
+      color: var(--cuf-white);
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      display: block;
+    }
+
+    .footer__main__logo-subtitle {
+      color: var(--cuf-white);
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .footer__main__sites-toggle {
+      display: none !important;
+    }
+
+    .footer__main__nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer__main__nav > li > a {
+      color: var(--cuf-white);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .footer__main__nav > li > a:hover {
+      color: #afb5b5;
+    }
+
+    .footer__main__nav .sub-menu {
+      list-style: none;
+      margin: 8px 0 0;
+      padding: 0;
+    }
+
+    .footer__main__nav .sub-menu a {
+      color: var(--cuf-white);
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .footer__main__nav .sub-menu a:hover {
+      opacity: 1;
+    }
+
+    .footer__newsletter {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .footer__newsletter .ui-btn {
+      border: none !important;
+      background: transparent !important;
+      color: var(--cuf-white) !important;
+      text-decoration: underline;
+      padding: 0;
+    }
+
+    .footer__newsletter .ui-btn:hover {
+      text-decoration: none;
+    }
+
+    /* Remove all arrows / decoration in footer buttons */
+    .footer *::before,
+    .footer *::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    .footer__top__btns a svg,
+    .footer__top__btns button svg,
+    .footer__newsletter a svg,
+    .footer__newsletter button svg {
+      display: none !important;
+    }
+
+    .footer__bottom {
+      padding: 20px 0 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+
+    .footer__bottom__links a {
+      color: var(--cuf-white);
+      text-decoration: none;
+      margin-right: 16px;
+    }
+
+    .footer__bottom__links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .footer__main {
+        flex-direction: column;
+      }
+
+      .footer__newsletter {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+
+  <!-- jQuery & WP scripts (if you still rely on theme JS) -->
+  <script src="https://avispl.com/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+  <script src="https://avispl.com/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-5WM2P7");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Bing Tag -->
+  <meta name="msvalidate.01" content="7C83836A11E0631EC53AA45935C1FCAB" />
+</head>
+
+<body class="home wp-singular page-template-default page page-id-2 wp-custom-logo wp-theme-avi-spl">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-5WM2P7"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="skip-link">
+    <div class="container">
+      <a class="skip-link__btn" href="#main-content" aria-label="Skip to main content">Skip to main content</a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="container">
+      <button
+        class="header__nav-toggle"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+        aria-label="Open main navigation"
+      ></button>
+
+      <a class="header__logo" href="index.html" aria-label="Home">
+        <span class="header__logo-title">CALL US FIRST</span>
+        <span class="header__logo-subtitle">Smart City Solutions</span>
+      </a>
+
+      <nav id="main-navigation" class="header__navigation" aria-label="Main Navigation">
+        <ul class="header__nav-simple" id="cuf-main-nav">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="header__mobile-toggle" id="cuf-mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+
+      <a
+        href="contact.html"
+        class="header__contact ui-btn"
+        aria-label="Visit the Help Desk"
+      >
+        <span>HELP DESK</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero hero--home page-block" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <iframe
+          id="hero-video"
+          class="youtube-bg"
+          src="https://www.youtube.com/embed/c2HxYiM1N0k?start=70&autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&playsinline=1&enablejsapi=1"
+          title="Call Us First Background Video"
+          frameborder="0"
+          allow="autoplay; fullscreen; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="hero__content">
+        <div class="container">
+          <h1 id="hero-heading" data-splitting="words">
+            Smart City <br />
+            technology <br />
+            solutions
+          </h1>
+
+          <h2 class="p">Audio visual and unified communications services for IT</h2>
+
+          <div class="hero__content__btns"></div>
+
+          <button
+            class="hero__scroll scroll-btn scroll-btn--o scroll-to-main"
+            aria-label="Scroll to content"
+            title="Scroll to content"
+          >
+            <span class="sr-only">Scroll to main content</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div id="main-content"></div>
+
+    <!-- ABOUT INTRO -->
+    <section class="about-intro page-block" id="about">
+      <div class="container">
+        <p class="sub sub--md">Who we are</p>
+        <h2>
+          Call Us First is a leader <br />
+          in technology and A/V solutions, <br />
+          empowering communication and elevating connection.
+        </h2>
+
+        <img
+          fetchpriority="high"
+          decoding="async"
+          width="408"
+          height="284"
+          src="https://www.cti.com/wp-content/uploads/2025/04/military-crew-in-a-high-tech-operations-command-po-2025-02-20-01-23-38-utc-scaled.webp"
+          class="about-intro__image about-intro__image--1"
+          alt="A high-tech operations command room with a military crew collaborating at large screens."
+        />
+        <img
+          decoding="async"
+          width="613"
+          height="396"
+          src="https://www.sfm.ca/wp-content/uploads/2023/04/SI-Blog-Article-5.jpg"
+          class="about-intro__image about-intro__image--2"
+          alt="A person using audio-visual tools in a modern collaboration environment."
+        />
+        <img
+          decoding="async"
+          width="268"
+          height="316"
+          src="https://avispl.com/wp-content/uploads/2024/11/iStock-1865622991.jpg"
+          class="about-intro__image about-intro__image--3"
+          alt="A professional reviewing technology plans on a tablet outside a glass building."
+        />
+      </div>
+    </section>
+
+    <!-- CUSTOMER JOURNEY CAROUSEL -->
+    <section
+      class="customer-journey-carousel page-block"
+      role="region"
+      aria-labelledby="customer-carousel-heading"
+      aria-roledescription="carousel"
+      id="services"
+    >
+      <div class="container">
+        <div class="page-block__header">
+          <h3 id="customer-carousel-heading">
+            A/V, Unified Communications, and Collaboration Technology that Drive Innovation and Growth.
+          </h3>
+          <p>
+            Whether you're strategizing, managing, or enhancing your unified communications and collaboration
+            environment, we have the support you need.
+          </p>
+        </div>
+
+        <div class="customer-journey-carousel__slider swiper" aria-live="polite">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide__bg swiper-slide__bg--dark">
+                <picture>
+                  <img
+                    decoding="async"
+                    src="https://media.extron.com/public/company/markets/img/company_market_courtroom.jpg"
+                    alt="Modern courtroom equipped with integrated audio-visual systems."
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide__body">
+                <h4>AV</h4>
+                <p>Expert engineers design and install your AV technology.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide__bg swiper-slide__bg--dark">
+                <picture>
+                  <img
+                    decoding="async"
+                    src="https://www.tbdenterprises.ca/wp-content/uploads/2021/01/Screenshot_14-1024x920.png"
+                    alt="Engineer configuring AV and control equipment in a rack."
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide__body">
+                <h4>Software Implementation</h4>
+                <p>Software implementation and unified communications services for IT.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide__bg swiper-slide__bg--dark">
+                <picture>
+                  <img
+                    decoding="async"
+                    src="https://de.crestron.com/getattachment/18f247dd-cdbb-4534-be2e-9e9e42df32b7/18f247dd-cdbb-4534-be2e-9e9e42df32b7.aspx"
+                    alt="Colleagues collaborating over video with unified communications tools."
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide__body">
+                <h4>Enterprise Technology</h4>
+                <p>Enterprise technology and unified communications services for IT.</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" tabindex="0">
+              <div class="swiper-slide__bg swiper-slide__bg--dark">
+                <picture>
+                  <img
+                    decoding="async"
+                    src="https://src.n-ix.com/uploads/2025/08/14/7022f7e5-3232-44ec-92cf-7e8eaa4d743b.webp"
+                    alt="Modern meeting room with integrated conferencing technology."
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide__body">
+                <h4>IT Staff Augmentation</h4>
+                <p>IT staff augmentation and enterprise technology solutions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="customer-journey-carousel__footer">
+          <div
+            class="swiper-pagination"
+            data-pagination-texts='["AV","Software","Enterprise","IT Staff"]'
+          ></div>
+
+          <div class="swiper-buttons swiper-buttons--g">
+            <button class="swiper-button-prev" aria-label="Previous Slide"></button>
+            <button class="swiper-button-next" aria-label="Next Slide"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS MARQUEE -->
+    <section class="logo-marquee page-block" aria-label="Logo Marquee" id="partners">
+      <div class="container">
+        <div class="logo-marquee__header">
+          <h3 class="h6">Partners</h3>
+          <p>We partner with leading collaboration providers.</p>
+        </div>
+
+        <div
+          class="logo-marquee__marquee"
+          role="region"
+          aria-live="polite"
+          aria-label="Scrolling logos of partners and clients"
+        >
+          <div class="logo-marquee__marquee__group">
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Seal_of_the_United_States_Department_of_Defense.svg"
+                alt="Department of Defense"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Seal_of_Prince_George%27s_County%2C_Maryland.svg"
+                alt="Prince George's County"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://i.ibb.co/YF66C1jb/00729f2d99c43c39c7cbba9bb4fd84f6.png"
+                alt="NASA Goddard Space Flight Center"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://1000logos.net/wp-content/uploads/2020/03/Crestron-Logo.jpg"
+                alt="Crestron"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://www.soundandcommunications.com/wp-content/uploads/2020/04/extron-logo.png"
+                alt="Extron"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://cdn.avixa.org/production/images/default-source/logos/avixa_logomark-450x362.jpg"
+                alt="AVIXA"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/B%26H_Foto_%26_Electronics_Logo.svg/2560px-B%26H_Foto_%26_Electronics_Logo.svg.png"
+                alt="B&H Photo Video"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/CDW_Logo.svg/1280px-CDW_Logo.svg.png"
+                alt="CDW"
+            /></a>
+          </div>
+
+          <div class="logo-marquee__marquee__group" aria-hidden="true">
+            <!-- Duplicate group for seamless looping -->
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Seal_of_the_United_States_Department_of_Defense.svg"
+                alt="Department of Defense"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Seal_of_Prince_George%27s_County%2C_Maryland.svg"
+                alt="Prince George's County"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://i.ibb.co/YF66C1jb/00729f2d99c43c39c7cbba9bb4fd84f6.png"
+                alt="NASA Goddard Space Flight Center"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://1000logos.net/wp-content/uploads/2020/03/Crestron-Logo.jpg"
+                alt="Crestron"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://www.soundandcommunications.com/wp-content/uploads/2020/04/extron-logo.png"
+                alt="Extron"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://cdn.avixa.org/production/images/default-source/logos/avixa_logomark-450x362.jpg"
+                alt="AVIXA"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/B%26H_Foto_%26_Electronics_Logo.svg/2560px-B%26H_Foto_%26_Electronics_Logo.svg.png"
+                alt="B&H Photo Video"
+            /></a>
+            <a href="#"
+              ><img
+                decoding="async"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/CDW_Logo.svg/1280px-CDW_Logo.svg.png"
+                alt="CDW"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES SLIDER -->
+    <section
+      class="page-slider base-slider page-block page-slider--blue"
+      role="region"
+      aria-labelledby="page-slider-heading"
+      aria-roledescription="carousel"
+      id="industries"
+    >
+      <div class="container">
+        <div class="base-slider__header page-slider__header">
+          <div class="base-slider__header__title">
+            <p class="sub sub--lg">Industries</p>
+            <h3 id="page-slider-heading" data-splitting="words">
+              Solutions tailored to <br />your industry
+            </h3>
+          </div>
+        </div>
+
+        <div class="base-slider__slider page-slider__slider swiper" aria-live="polite">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" href="#">
+              <div class="swiper-slide__img">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="680"
+                  height="616"
+                  src="https://www.eucom.mil/Img/42978/Medium/baltic-architecture-and-governance-working-groups-convene-to-enhance-interoperability"
+                  alt="Government technology and policy briefing in session."
+                />
+              </div>
+              <div class="swiper-slide__body">
+                <h4 class="h5">Government</h4>
+              </div>
+            </a>
+
+            <a class="swiper-slide" href="#">
+              <div class="swiper-slide__img">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="680"
+                  height="616"
+                  src="https://atlona.com/wp-content/uploads/2018/01/Blessing-Hopstial-demo-CS800px.jpg"
+                  alt="Healthcare control room with medical AV systems."
+                />
+              </div>
+              <div class="swiper-slide__body">
+                <h4 class="h5">Healthcare</h4>
+              </div>
+            </a>
+
+            <a class="swiper-slide" href="#">
+              <div class="swiper-slide__img">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="680"
+                  height="383"
+                  src="https://www.rossvideo.com/wp-content/uploads/2025/02/avheader-2.jpg"
+                  alt="Corporate collaboration space with AV and broadcasting tools."
+                />
+              </div>
+              <div class="swiper-slide__body">
+                <h4 class="h5">Corporate</h4>
+              </div>
+            </a>
+
+            <a class="swiper-slide" href="#">
+              <div class="swiper-slide__img">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="680"
+                  height="616"
+                  src="https://www.uniav.com/wp-content/uploads/2022/01/Auditorium-AV-Solutions-1500.jpg"
+                  alt="Education auditorium configured with AV presentation systems."
+                />
+              </div>
+              <div class="swiper-slide__body">
+                <h4 class="h5">Education</h4>
+              </div>
+            </a>
+
+            <a class="swiper-slide" href="#">
+              <div class="swiper-slide__img">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="680"
+                  height="616"
+                  src="https://www.personalfinancelab.com/wp-content/uploads/price-chart-1.jpg"
+                  alt="Economic development visualization on digital charts."
+                />
+              </div>
+              <div class="swiper-slide__body">
+                <h4 class="h5">Economic Development</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="base-slider__footer">
+          <div class="swiper-buttons swiper-buttons--w">
+            <button class="swiper-button-prev" aria-label="Previous Slide"></button>
+            <button class="swiper-button-next" aria-label="Next Slide"></button>
+          </div>
+          <div class="swiper-pagination swiper-pagination--w"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPLIT BAND (LOGO + TEXT) -->
+    <section class="cuf-split-band">
+      <div class="cuf-split-band__image">
+        <img
+          src="https://i.ibb.co/jvfvCPRH/Logo-CUF-Smart-City-1-2-removebg-preview.png"
+          alt="Call Us First Smart City Logo"
+        />
+      </div>
+
+      <div class="cuf-split-band__content">
+        <div class="cuf-split-band__content-inner">
+          <p class="cuf-split-band__eyebrow">Call Us First</p>
+          <h2 class="cuf-split-band__title">Your trusted technology partner</h2>
+          <p class="cuf-split-band__text">
+            Call Us First specializes in AV integration, software implementation, enterprise technology, and IT staff
+            augmentation—delivering seamless solutions that keep your teams connected and your operations running
+            smoothly.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__main__logo">
+          <a href="index.html" class="footer__main__logo-wordmark">
+            <span class="footer__main__logo-title">CALL US FIRST</span>
+            <span class="footer__main__logo-subtitle">Smart City Solutions</span>
+          </a>
+        </div>
+
+        <ul id="menu-footer-links" class="footer__main__nav">
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Discover</a>
+            <ul class="sub-menu">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#industries">Industries</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#partners">Partners</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Info</a>
+            <ul class="sub-menu">
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#locations">Locations</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#partners">Technology partners</a></li>
+              <li><a href="#careers">Careers</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="footer__main__last">
+          <form class="footer__newsletter" aria-label="Support and Help Desk">
+            <a class="ui-btn ui-btn--secondary ui-btn--secondary-white" href="contact.html">
+              <span>Support</span>
+            </a>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom__text">
+          &copy; <span id="cuf-year"></span> Call Us First. All rights reserved.
+        </div>
+        <div class="footer__bottom__links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-pusher"></div>
+
+  <!-- JS: Nav toggle, scroll, YouTube loop, year -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Mobile nav toggle
+      const toggle = document.getElementById("cuf-mobile-toggle");
+      const nav = document.getElementById("cuf-main-nav");
+      if (toggle && nav) {
+        toggle.addEventListener("click", function () {
+          nav.classList.toggle("active");
+        });
+      }
+
+      // Scroll from hero
+      const scrollBtn = document.querySelector(".scroll-to-main");
+      const mainContent = document.getElementById("main-content");
+      if (scrollBtn && mainContent) {
+        scrollBtn.addEventListener("click", function () {
+          mainContent.scrollIntoView({ behavior: "smooth" });
+        });
+      }
+
+      // Dynamic footer year
+      const yearSpan = document.getElementById("cuf-year");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+
+    // YouTube background loop
+    var cufPlayer;
+    function onYouTubeIframeAPIReady() {
+      cufPlayer = new YT.Player("hero-video", {
+        events: {
+          onReady: onCufPlayerReady,
+          onStateChange: onCufPlayerStateChange,
+        },
+      });
+    }
+
+    function onCufPlayerReady(event) {
+      event.target.seekTo(70);
+      event.target.playVideo();
+    }
+
+    function onCufPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.PLAYING) {
+        setInterval(function () {
+          if (!cufPlayer || typeof cufPlayer.getCurrentTime !== "function") return;
+          var currentTime = cufPlayer.getCurrentTime();
+          if (currentTime >= 120) {
+            cufPlayer.seekTo(70);
+          }
+        }, 1000);
+      }
+    }
+
+    // Load YouTube IFrame API
+    (function loadYT() {
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    })();
+  </script>
+
+  <!-- If you still want theme JS, keep this -->
+  <script id="bones-js-js-extra">
+    var avi_ajax = { ajax_url: "https://avispl.com/wp-admin/admin-ajax.php" };
+  </script>
+  <script
+    type="module"
+    src="https://avispl.com/wp-content/themes/avi-spl/library/js/scripts.min.js"
+  ></script>
+</body>
+</html>
