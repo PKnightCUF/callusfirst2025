@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Call Us First</title>
+    <meta name="description" content="Contact Call Us First for smart city technology solutions, AV integration, and IT services.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px 0;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header__logo {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .header__logo-main {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            display: block;
+        }
+
+        .header__logo-sub {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-top: -2px;
+        }
+
+        .header__nav {
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .header__nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .header__nav a:hover {
+            color: #979797;
+        }
+
+        .header__contact {
+            background: transparent;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .header__contact:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Mobile Toggle */
+        .header__mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* Contact Section */
+        .contact-wrap {
+            padding: 150px 0 80px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .contact-wrap .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-wrap__left h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #05123d;
+            margin-bottom: 30px;
+        }
+
+        .contact-wrap__left__help {
+            margin-bottom: 40px;
+        }
+
+        .contact-wrap__left__help p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .contact-wrap__left__hq {
+            margin-top: 40px;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-wrap__left__hq h6 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #05123d;
+            margin-bottom: 15px;
+        }
+
+        .contact-wrap__left__hq p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .contact-wrap__left__hq a {
+            color: #0972ce;
+            text-decoration: none;
+        }
+
+        .contact-wrap__left__hq a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Styling */
+        #contact-form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Right Side */
+        .contact-wrap__right__info {
+            background: #0972ce;
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .contact-wrap__right__info h6 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .contact-wrap__right__info ul {
+            list-style: none;
+        }
+
+        .contact-wrap__right__info li {
+            margin-bottom: 15px;
+        }
+
+        .contact-wrap__right__info li h6 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .contact-wrap__right__info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-wrap__right__info a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: #ffffff;
+            color: #0972ce;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #f0f0f0;
+        }
+
+        /* FAQ Accordion */
+        .contact-wrap__right__faq {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact-wrap__right__faq h5 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #05123d;
+            margin-bottom: 20px;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        .accordion-button {
+            width: 100%;
+            padding: 15px 0;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-button:after {
+            content: '+';
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-button.active:after {
+            transform: rotate(45deg);
+        }
+
+        .accordion-body {
+            padding: 0 0 15px 0;
+            display: none;
+            color: #555;
+        }
+
+        .accordion-body.show {
+            display: block;
+        }
+
+        .accordion-body a {
+            color: #0972ce;
+            text-decoration: none;
+        }
+
+        .accordion-body a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0A1D5F;
+            color: #ffffff;
+            padding: 60px 0 30px;
+        }
+
+        .footer__main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer__logo-main {
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer__logo-sub {
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .footer__nav {
+            list-style: none;
+        }
+
+        .footer__nav li {
+            margin-bottom: 10px;
+        }
+
+        .footer__nav a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer__nav a:hover {
+            color: #afb5b5;
+        }
+
+        .footer__bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .header__nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 29, 95, 0.98);
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .header__nav.active {
+                display: flex;
+            }
+
+            .header__mobile-toggle {
+                display: block;
+            }
+
+            .contact-wrap .container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer__main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrap__left h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-main">CALL US FIRST</span>
+                <span class="header__logo-sub">Smart City Solutions</span>
+            </a>
+
+            <nav>
+                <ul class="header__nav" id="main-nav">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#industries">Industries</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="contact.html" class="header__contact">HELP DESK</a>
+
+            <button class="header__mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="contact-wrap">
+            <div class="container">
+                <div class="contact-wrap__left">
+                    <h1>SUBMIT A TICKET</h1>
+                    
+                    <div class="contact-wrap__left__help">
+                        <p>If you need immediate assistance, please call our support team.</p>
+                    </div>
+
+                    <div id="contact-form">
+                        <!-- HubSpot form will be inserted here -->
+                    </div>
+
+                    <div class="contact-wrap__left__hq">
+                        <h6>Call Us First Main Office</h6>
+                        <p class="address">4221 Forbes Blvd, Lanham, MD</p>
+                        <p class="phone">
+                            <strong>Phone:</strong>
+                            <a href="tel:3019666546">(301) 966-6546</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-wrap__right">
+                    <div class="contact-wrap__right__info">
+                        <h6>Need to reach our<br>Help Desk?</h6>
+                        <ul>
+                            <li>
+                                <h6>Phone</h6>
+                                <p>Call (301) 966-6546</p>
+                            </li>
+                            <li>
+                                <h6>Email</h6>
+                                <p><a href="mailto:info@callufirst.world">info@callufirst.world</a></p>
+                            </li>
+                            <li>
+                                <h6>We're available 9-5PM EST</h6>
+                            </li>
+                        </ul>
+                        <a href="https://forms.monday.com/forms/c2dec6fe53dce8cf445b9dff3a24d379?r=use1" class="btn-primary" target="_blank">Help Desk</a>
+                    </div>
+
+                    <div class="contact-wrap__right__faq">
+                        <h5>How may we help you today?</h5>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Need other technical support?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Call (301) 966-6546 Mon.-Fri. between 9 am – 5 pm EST, or send an email to <a href="mailto:info@callufirst.world">info@callufirst.world</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Want to learn more about our solutions, services, or products?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Call (301) 966-6546, or send an email to <a href="mailto:info@callufirst.world">info@callufirst.world</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    What services does Call Us First provide?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Call Us First specializes in AV integration, software implementation, enterprise technology solutions, and IT staff augmentation. We help businesses optimize their communication systems and technology infrastructure.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Which industries do you serve?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>We serve government agencies, healthcare facilities, corporate enterprises, educational institutions, and economic development organizations. Our solutions are tailored to meet the unique needs of each sector.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    How can I request a quote or consultation?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Call us at (301) 966-6546, or send an email to <a href="mailto:info@callufirst.world">info@callufirst.world</a> to discuss your project needs.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Do you offer 24/7 technical support?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Our help desk is available 9-5PM EST to assist with any technical issues. Call (301) 966-6546 or email <a href="mailto:support@callufirst.world">support@callufirst.world</a>.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    What makes Call Us First different from other AV providers?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>We combine expert AV integration with comprehensive IT services, offering end-to-end solutions. Our team focuses on seamless implementation, ongoing support, and customized technology that grows with your organization.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-button">
+                                    Do you work with government contracts?
+                                </button>
+                                <div class="accordion-body">
+                                    <p>Yes, we have extensive experience working with federal, state, and local government agencies. We understand compliance requirements and offer solutions that meet government standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div>
+                    <a href="index.html" style="text-decoration: none;">
+                        <span class="footer__logo-main">CALL US FIRST</span>
+                        <span class="footer__logo-sub">Smart City Solutions</span>
+                    </a>
+                </div>
+                <div>
+                    <ul class="footer__nav">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#industries">Industries</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer__nav">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Call Us First. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+        // HubSpot Form
+        if (typeof hbspt !== 'undefined') {
+            hbspt.forms.create({
+                portalId: "485772",
+                formId: "f6c7efdc-d6a8-4cce-9e2e-2964d1b635ad",
+                target: '#contact-form'
+            });
+        }
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mainNav = document.getElementById('main-nav');
+        
+        if (mobileToggle && mainNav) {
+            mobileToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+        }
+
+        // Accordion Functionality
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const accordionBody = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                // Close all accordions
+                accordionButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.nextElementSibling.classList.remove('show');
+                });
+                
+                // Open clicked accordion if it wasn't active
+                if (!isActive) {
+                    this.classList.add('active');
+                    accordionBody.classList.add('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
